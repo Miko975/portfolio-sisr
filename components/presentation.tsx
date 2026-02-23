@@ -9,7 +9,7 @@ export const Presentation = () => {
         {/* Partie gauche : Texte de présentation */}
         <div className="flex-1">
           <h3 className="text-cyan-400 uppercase tracking-widest text-sm font-bold mb-2">Qui suis-je</h3>
-          <h2 className="text-4xl font-bold mb-8">Presentation</h2>
+          <h2 className="text-4xl font-bold mb-8">Présentation</h2>
           
           <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
             <p>
