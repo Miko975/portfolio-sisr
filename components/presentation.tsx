@@ -13,13 +13,13 @@ export const Presentation = () => {
           
           <div className="space-y-6 text-gray-400 text-lg leading-relaxed">
             <p>
-              Je suis actuellement en 2eme annee de <span className="text-white font-semibold">BTS Services Informatiques aux Organisations</span> avec l'option <span className="text-cyan-400 font-semibold">SISR</span> au Lycee Rene Cassin a Strasbourg.
+              Je suis actuellement en 2ème année de <span className="text-white font-semibold">BTS Services Informatiques aux Organisations</span> avec l'option <span className="text-cyan-400 font-semibold">SISR</span> au Lycée René Cassin à Strasbourg.
             </p>
             <p>
-              Passionne par les technologies informatiques, je developpe une expertise pratique en administration reseau, cybersecurite et gestion des infrastructures a travers des projets concrets.
+              Passionné par les technologies informatiques, je développe une expertise pratique en administration réseau, cybersécurité et gestion des infrastructures à travers des projets concrets.
             </p>
             <p>
-              Mon objectif est de contribuer a la <span className="text-white font-semibold">securisation et l'optimisation des systemes d'information</span> au sein d'une entreprise dynamique.
+              Mon objectif est de contribuer à la <span className="text-white font-semibold">sécurisation et l'optimisation des systèmes d'information</span> au sein d'une entreprise dynamique.
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@ export const Presentation = () => {
               <Settings className="text-cyan-400" size={24} />
               <h4 className="text-xl font-bold">Pragmatique</h4>
             </div>
-            <p className="text-gray-400">Je prefere les solutions concretes et testees plutot que les theories complexes.</p>
+            <p className="text-gray-400">Je préfère les solutions concrètes et testées plutôt que les théories complexes.</p>
           </div>
 
           {/* Carte Rigoureux */}
@@ -51,7 +51,7 @@ export const Presentation = () => {
               <ShieldCheck className="text-cyan-400" size={24} />
               <h4 className="text-xl font-bold">Rigoureux</h4>
             </div>
-            <p className="text-gray-400">La securite et la qualite sont mes priorites dans chaque projet.</p>
+            <p className="text-gray-400">La sécurité et la qualité sont mes priorités dans chaque projet.</p>
           </div>
 
         </div>
