@@ -22,44 +22,48 @@ export function Hero() {
         }}
       />
 
-      {/* Glow effect */}
-      <div className="pointer-events-none absolute left-1/2 top-1/4 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/5 blur-[120px]" />
+      {/* Glow effect - Ajusté en Cyan */}
+      <div className="pointer-events-none absolute left-1/2 top-1/4 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/5 blur-[120px]" />
 
       <div
         className={`relative z-10 flex max-w-3xl flex-col items-center text-center transition-all duration-1000 ease-out ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
         }`}
       >
-        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-4 py-1.5">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
+        {/* Badge - Taille réduite */}
+        <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-3 py-1">
+          <span className="relative flex h-1.5 w-1.5">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
+            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-cyan-400" />
           </span>
-          <span className="text-sm text-muted-foreground">
-            {"Etudiant BTS SIO option SISR"}
+          <span className="text-xs font-medium text-muted-foreground">
+            {"Étudiant BTS SIO option SISR"}
           </span>
         </div>
 
-        <h1 className="text-balance text-5xl font-bold tracking-tight text-foreground md:text-7xl lg:text-8xl">
+        {/* Nom - Réduit de text-8xl à text-5xl/6xl */}
+        <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
           {"Mikail "}
-          <span className="text-accent">{"Ozturk"}</span>
+          <span className="text-cyan-400">{"Ozturk"}</span>
         </h1>
 
-        <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground md:text-xl">
-          {"Passionne par l'administration systemes et reseaux, la cybersecurite et la protection des donnees. En route pour devenir expert infrastructure."}
+        {/* Description - Texte réduit et accents ajoutés */}
+        <p className="mt-6 max-w-lg text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
+          {"Passionné par l'administration systèmes et réseaux, la cybersécurité et la protection des données. En route pour devenir expert infrastructure."}
         </p>
 
-        <div className="mt-10 flex items-center gap-4">
+        {/* Boutons - Un peu plus compacts */}
+        <div className="mt-8 flex items-center gap-4">
           <a
             href="#competences"
-            className="inline-flex items-center gap-2 rounded-lg bg-foreground px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+            className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
           >
             <Shield className="h-4 w-4" />
-            {"Mes competences"}
+            {"Mes compétences"}
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-lg border border-border bg-secondary/50 px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+            className="inline-flex items-center gap-2 rounded-lg border border-border bg-secondary/50 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
           >
             {"Me contacter"}
           </a>
@@ -69,7 +73,7 @@ export function Hero() {
       <a
         href="#competences"
         className="absolute bottom-12 animate-bounce text-muted-foreground transition-colors hover:text-foreground"
-        aria-label="Defiler vers les competences"
+        aria-label="Défiler vers les compétences"
       >
         <ArrowDown className="h-5 w-5" />
       </a>
