@@ -42,7 +42,7 @@ const experiences = [
 const certifications = [
   { name: "PIX", org: "Compétences numériques" },
   { name: "RGPD", org: "CNIL" },
-  { name: "SecNumAcadémie", org: "ANSSI" },
+  { name: "SecNumAcademy", org: "ANSSI" },
   { name: "NetAcad", org: "CISCO" },
 ]
 
