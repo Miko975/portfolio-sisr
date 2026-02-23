@@ -15,7 +15,7 @@ interface CompetenceCard {
 
 const competences: CompetenceCard[] = [
   {
-    title: "Developpement",
+    title: "Développement",
     description: "Conception d'applications web et scripts avec des technologies front et back modernes.",
     image: "/images/project-3.jpg",
     tags: ["HTML/CSS", "JavaScript", "Python", "SQL"],
@@ -23,24 +23,24 @@ const competences: CompetenceCard[] = [
     span: "col-span-1",
   },
   {
-    title: "Securite",
-    description: "Analyse de risques, conformite reglementaire et audit de securite des systemes d'information.",
+    title: "Sécurité",
+    description: "Analyse de risques, conformité réglementaire et audit de sécurité des systèmes d'information.",
     image: "/images/project-1.jpg",
     tags: ["Wireshark", "RGPD", "Analyse risques"],
     icon: <Shield className="h-5 w-5" />,
     span: "col-span-1",
   },
   {
-    title: "Reseau",
-    description: "Configuration et administration d'infrastructures reseau completes.",
+    title: "Réseau",
+    description: "Configuration et administration d'infrastructures réseau complètes.",
     image: "/images/project-2.jpg",
     tags: ["TCP/IP", "Virtualisation", "Pare-feu", "DNS/DHCP"],
     icon: <Network className="h-5 w-5" />,
     span: "col-span-1",
   },
   {
-    title: "Systemes",
-    description: "Deploiement, gestion et maintenance de serveurs en environnement professionnel.",
+    title: "Systèmes",
+    description: "Déploiement, gestion et maintenance de serveurs en environnement professionnel.",
     image: "/images/project-4.jpg",
     tags: ["Linux", "Windows Server", "Bash", "Maintenance"],
     icon: <Server className="h-5 w-5" />,
@@ -69,7 +69,7 @@ function BentoCard({ card, index }: { card: CompetenceCard; index: number }) {
   return (
     <div
       ref={ref}
-      className={`group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:border-accent/40 hover:shadow-[0_0_40px_-12px] hover:shadow-accent/10 ${card.span} ${
+      className={`group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-500 hover:border-cyan-400/40 hover:shadow-[0_0_40px_-12px] hover:shadow-cyan-400/10 ${card.span} ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
       }`}
       style={{ transitionDelay: `${index * 100}ms` }}
@@ -91,7 +91,7 @@ function BentoCard({ card, index }: { card: CompetenceCard; index: number }) {
         <div className="flex items-start justify-between gap-3">
           <div>
             <h3 className="flex items-center gap-2 text-lg font-semibold text-foreground md:text-xl">
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-cyan-400/10 text-cyan-400">
                 {card.icon}
               </span>
               {card.title}
@@ -122,8 +122,12 @@ export function BentoGrid() {
     <section id="competences" className="px-6 py-24 md:py-32">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12">
+          {/* Titre COMPETENCES : Plus grand et en Cyan */}
+          <p className="mb-4 text-sm font-black uppercase tracking-[0.3em] text-cyan-400">
+            {"Compétences"}
+          </p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            {"Competences"}
+            {"Expertise Technique"}
           </h2>
         </div>
 
