@@ -20,7 +20,7 @@ export function Footer() {
             {"Travaillons ensemble"}
           </h2>
           <p className="mt-4 max-w-md text-base text-muted-foreground">
-            {"Vous cherchez un stagiaire ou un alternant motive ? N'hesitez pas a me contacter."}
+            {"Vous cherchez un stagiaire ou un alternant motivé ? N'hesitez pas à me contacter."}
           </p>
 
           <div className="mt-8 flex items-center gap-4">
