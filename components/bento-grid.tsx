@@ -119,19 +119,20 @@ function BentoCard({ card, index }: { card: CompetenceCard; index: number }) {
 
 export function BentoGrid() {
   return (
-    <section id="competences" className="px-6 py-24 md:py-32">
+    <section id="competences" className="px-6 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-12">
-          {/* Titre COMPETENCES : Plus grand et en Cyan */}
+        <div className="mb-10">
+          {/* Petit titre bleu */}
           <p className="mb-4 text-sm font-black uppercase tracking-[0.3em] text-cyan-400">
             {"Compétences"}
           </p>
-          <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          {/* Titre Expertise Technique réduit en text-3xl */}
+          <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-3xl">
             {"Expertise Technique"}
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4" style={{ gridAutoRows: '280px' }}>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4" style={{ gridAutoRows: '260px' }}>
           {competences.map((card, i) => (
             <BentoCard key={card.title} card={card} index={i} />
           ))}
