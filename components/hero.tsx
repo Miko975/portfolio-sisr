@@ -1,6 +1,6 @@
 "use client"
 
-import { ArrowDown, Shield } from "lucide-react"
+import { Download, ArrowDown } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export function Hero() {
@@ -22,7 +22,7 @@ export function Hero() {
         }}
       />
 
-      {/* Glow effect - Ajusté en Cyan */}
+      {/* Glow effect */}
       <div className="pointer-events-none absolute left-1/2 top-1/4 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/5 blur-[120px]" />
 
       <div
@@ -30,7 +30,7 @@ export function Hero() {
           isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
         }`}
       >
-        {/* Badge - Taille réduite */}
+        {/* Badge */}
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-3 py-1">
           <span className="relative flex h-1.5 w-1.5">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75" />
@@ -41,31 +41,27 @@ export function Hero() {
           </span>
         </div>
 
-        {/* Nom - Réduit de text-8xl à text-5xl/6xl */}
+        {/* Nom */}
         <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
           {"Mikail "}
           <span className="text-cyan-400">{"Ozturk"}</span>
         </h1>
 
-        {/* Description - Texte réduit et accents ajoutés */}
+        {/* Description */}
         <p className="mt-6 max-w-lg text-pretty text-base leading-relaxed text-muted-foreground md:text-lg">
           {"Passionné par l'administration systèmes et réseaux, la cybersécurité et la protection des données. En route pour devenir expert infrastructure."}
         </p>
 
-        {/* Boutons - Un peu plus compacts */}
-        <div className="mt-8 flex items-center gap-4">
+        {/* BOUTON UNIQUE : Télécharger CV */}
+        <div className="mt-10">
           <a
-            href="#competences"
-            className="inline-flex items-center gap-2 rounded-lg bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+            href="/cv.pdf" // Assure-toi que ton fichier s'appelle bien cv.pdf et qu'il est dans le dossier 'public'
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-3 rounded-full bg-cyan-400 px-8 py-3 text-sm font-bold text-black transition-all hover:bg-cyan-300 hover:scale-105 active:scale-95"
           >
-            <Shield className="h-4 w-4" />
-            {"Mes compétences"}
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 rounded-lg border border-border bg-secondary/50 px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
-          >
-            {"Me contacter"}
+            <Download className="h-4 w-4 transition-transform group-hover:-translate-y-0.5" />
+            {"Télécharger mon CV"}
           </a>
         </div>
       </div>
