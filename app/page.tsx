@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero"
 import { Presentation } from "@/components/presentation"
 import { BentoGrid } from "@/components/bento-grid"
 import { Projects } from "@/components/projects"
+import { Veille } from "@/components/veille" // <-- AJOUT DE L'IMPORT
 import { About } from "@/components/about"
 import { Footer } from "@/components/footer"
 
@@ -19,8 +20,11 @@ export default function Home() {
         <Presentation />
         <BentoGrid />
         
-        {/* Ajout de la nouvelle section Projets ici */}
+        {/* Ta section Projets */}
         <Projects />
+
+        {/* Ajout de la section Veille Technologique ici */}
+        <Veille />
         
         <About />
         <Footer />
