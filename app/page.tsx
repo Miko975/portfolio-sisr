@@ -2,7 +2,6 @@ import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { Presentation } from "@/components/presentation"
 import { BentoGrid } from "@/components/bento-grid"
-import { Certifications } from "@/components/certifications" // <-- AJOUT DE L'IMPORT
 import { Projects } from "@/components/projects"
 import { Veille } from "@/components/veille" 
 import { About } from "@/components/about"
@@ -19,10 +18,9 @@ export default function Home() {
       {/* On crée un conteneur pour tout le reste avec un espacement (gap) important */}
       <div className="flex flex-col gap-32 md:gap-40 pb-20">
         <Presentation />
-        <BentoGrid />
         
-        {/* Ajout de la nouvelle section Certifications ici */}
-        <Certifications />
+        {/* BentoGrid contient maintenant l'Expertise ET les Certifications */}
+        <BentoGrid />
         
         {/* Ta section Projets */}
         <Projects />
