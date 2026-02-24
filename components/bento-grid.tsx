@@ -141,7 +141,7 @@ export function BentoGrid() {
 
         {/* Sous-titre pour les Certifications */}
         <div className="mt-16 mb-8 flex flex-col items-center">
-             <h3 className="text-cyan-400 uppercase tracking-[0.3em] text-[10px] font-bold">Certifications</h3>
+             <h3 className="text-cyan-400 uppercase tracking-[0.3em] text-xs font-bold">Certifications</h3>
         </div>
 
         {/* Grille des Certifications intégrée en dessous */}
@@ -158,7 +158,7 @@ export function BentoGrid() {
               <h4 className="text-sm font-bold text-white mb-0.5 uppercase tracking-tight">
                 {cert.title}
               </h4>
-              <p className="text-zinc-500 text-[10px] font-medium uppercase tracking-wider">
+              <p className="text-zinc-500 text-xs font-medium uppercase tracking-wider">
                 {cert.subtitle}
               </p>
             </div>
