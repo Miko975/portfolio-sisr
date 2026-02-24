@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
-import { Shield, Network, Server, Code } from "lucide-react"
+import { Shield, Network, Server, Code, BadgeCheck } from "lucide-react"
 
 interface CompetenceCard {
   title: string
@@ -48,6 +48,13 @@ const competences: CompetenceCard[] = [
   },
 ]
 
+const certifications = [
+  { title: "PIX", subtitle: "Competences numeriques" },
+  { title: "RGPD", subtitle: "CNIL" },
+  { title: "SecNumAcademie", subtitle: "ANSSI" },
+  { title: "NetAcad", subtitle: "CISCO" }
+]
+
 function BentoCard({ card, index }: { card: CompetenceCard; index: number }) {
   const ref = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
@@ -74,7 +81,6 @@ function BentoCard({ card, index }: { card: CompetenceCard; index: number }) {
       }`}
       style={{ transitionDelay: `${index * 100}ms` }}
     >
-      {/* Image */}
       <div className="relative flex-1 overflow-hidden">
         <Image
           src={card.image}
@@ -86,7 +92,6 @@ function BentoCard({ card, index }: { card: CompetenceCard; index: number }) {
         <div className="absolute inset-0 bg-gradient-to-t from-card via-card/70 to-transparent" />
       </div>
 
-      {/* Content overlay */}
       <div className="absolute inset-x-0 bottom-0 flex flex-col gap-3 p-5 md:p-6">
         <div className="flex items-start justify-between gap-3">
           <div>
@@ -96,9 +101,6 @@ function BentoCard({ card, index }: { card: CompetenceCard; index: number }) {
               </span>
               {card.title}
             </h3>
-            <p className="mt-2 hidden text-sm leading-relaxed text-muted-foreground line-clamp-2">
-              {card.description}
-            </p>
           </div>
         </div>
 
@@ -122,19 +124,44 @@ export function BentoGrid() {
     <section id="competences" className="px-6 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mb-10">
-          {/* Petit titre bleu */}
           <p className="mb-4 text-sm font-black uppercase tracking-[0.3em] text-cyan-400">
             {"Compétences"}
           </p>
-          {/* Titre Expertise Technique réduit en text-3xl */}
           <h2 className="text-3xl font-bold tracking-tight text-foreground md:text-3xl">
             {"Expertise Technique"}
           </h2>
         </div>
 
+        {/* Grille des compétences principales */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4" style={{ gridAutoRows: '260px' }}>
           {competences.map((card, i) => (
             <BentoCard key={card.title} card={card} index={i} />
+          ))}
+        </div>
+
+        {/* Sous-titre pour les Certifications */}
+        <div className="mt-16 mb-8 flex flex-col items-center">
+             <h3 className="text-cyan-400 uppercase tracking-[0.3em] text-[10px] font-bold">Certifications</h3>
+        </div>
+
+        {/* Grille des Certifications intégrée en dessous */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {certifications.map((cert, index) => (
+            <div 
+              key={index} 
+              className="group relative rounded-2xl border border-border bg-card/30 p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:border-cyan-400/40"
+            >
+              <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-cyan-400/10 text-cyan-400 border border-cyan-400/20 shadow-[0_0_15px_-5px_rgba(6,182,212,0.4)] transition-transform group-hover:scale-110">
+                <BadgeCheck size={20} />
+              </div>
+              
+              <h4 className="text-sm font-bold text-white mb-0.5 uppercase tracking-tight">
+                {cert.title}
+              </h4>
+              <p className="text-zinc-500 text-[10px] font-medium uppercase tracking-wider">
+                {cert.subtitle}
+              </p>
+            </div>
           ))}
         </div>
       </div>
