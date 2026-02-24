@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { Presentation } from "@/components/presentation"
 import { BentoGrid } from "@/components/bento-grid"
+import { Projects } from "@/components/projects"
 import { About } from "@/components/about"
 import { Footer } from "@/components/footer"
 
@@ -17,6 +18,10 @@ export default function Home() {
       <div className="flex flex-col gap-32 md:gap-42 pb-20">
         <Presentation />
         <BentoGrid />
+        
+        {/* Ajout de la nouvelle section Projets ici */}
+        <Projects />
+        
         <About />
         <Footer />
       </div>
