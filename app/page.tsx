@@ -2,8 +2,9 @@ import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { Presentation } from "@/components/presentation"
 import { BentoGrid } from "@/components/bento-grid"
+import { Certifications } from "@/components/certifications" // <-- AJOUT DE L'IMPORT
 import { Projects } from "@/components/projects"
-import { Veille } from "@/components/veille" // <-- AJOUT DE L'IMPORT
+import { Veille } from "@/components/veille" 
 import { About } from "@/components/about"
 import { Footer } from "@/components/footer"
 
@@ -19,6 +20,9 @@ export default function Home() {
       <div className="flex flex-col gap-32 md:gap-40 pb-20">
         <Presentation />
         <BentoGrid />
+        
+        {/* Ajout de la nouvelle section Certifications ici */}
+        <Certifications />
         
         {/* Ta section Projets */}
         <Projects />
