@@ -9,11 +9,17 @@ export default function Home() {
   return (
     <main className="relative min-h-screen bg-background">
       <Navbar />
+      
+      {/* On garde le Hero tel quel car il occupe déjà beaucoup d'espace */}
       <Hero />
-      <Presentation />
-      <BentoGrid />
-      <About />
-      <Footer />
+      
+      {/* On crée un conteneur pour tout le reste avec un espacement (gap) important */}
+      <div className="flex flex-col gap-32 md:gap-48 pb-20">
+        <Presentation />
+        <BentoGrid />
+        <About />
+        <Footer />
+      </div>
     </main>
   )
 }
