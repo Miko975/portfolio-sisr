@@ -168,3 +168,4 @@ export function BentoGrid() {
     </section>
   )
 }
+// Mise à jour design
