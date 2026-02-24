@@ -15,7 +15,7 @@ export default function Home() {
       <Hero />
       
       {/* On crée un conteneur pour tout le reste avec un espacement (gap) important */}
-      <div className="flex flex-col gap-32 md:gap-42 pb-20">
+      <div className="flex flex-col gap-32 md:gap-40 pb-20">
         <Presentation />
         <BentoGrid />
         
