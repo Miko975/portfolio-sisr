@@ -6,7 +6,7 @@ const links = [
   { label: "Presentation", href: "#presentation" },
   { label: "Competences", href: "#competences" },
   { label: "Projets", href: "#projets" },
-  { label: "Veille", href: "#veille" }, // <-- AJOUT DE LA VEILLE ICI
+  { label: "Veille", href: "#veille" },
   { label: "Parcours", href: "#parcours" },
   { label: "Contact", href: "#contact" },
 ]
@@ -29,9 +29,10 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#" className="text-lg font-bold tracking-tight text-foreground">
-          {"M.O"}
-          <span className="text-accent">{"."}</span>
+        {/* CHANGEMENT ICI : REMPLACEMENT DE M.O PAR TON NOM */}
+        <a href="#" className="text-lg font-bold tracking-tight text-foreground whitespace-nowrap">
+          {"Mikail Ozturk"}
+          <span className="text-cyan-400">{"."}</span>
         </a>
 
         <div className="hidden items-center gap-1 md:flex">
