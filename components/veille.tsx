@@ -7,32 +7,32 @@ const articles = [
     description: "Analyse des capacités de Sora à générer des scènes complexes et ultra-réalistes, marquant une étape majeure dans la génération visuelle par IA.",
     date: "Février 2026",
     category: "Innovation",
-    source: "OpenAI",
-    url: "https://openai.com/sora"
+    source: "Le Monde Informatique",
+    url: "https://www.lemondeinformatique.fr/actualites/lire-sora-l-ia-generatrice-de-videos-d-openai-fait-prouesse-sur-prouesse-92978.html"
   },
   {
     title: "Midjourney v6 : Le photoréalisme poussé à l'extrême",
-    description: "Test des nouvelles fonctionnalités de Midjourney permettant une meilleure compréhension des prompts et un rendu des textures quasi indiscernable du réel.",
+    description: "Test et nouveautés de la version 6 : meilleure compréhension des nuances, rendu des mains amélioré et intégration du texte dans les images.",
     date: "Janvier 2026",
     category: "IA Générative",
-    source: "Midjourney",
-    url: "https://www.midjourney.com"
+    source: "L'Usine Digitale",
+    url: "https://www.usine-digitale.fr/article/midjourney-v6-est-disponible-l-ia-generatrice-d-images-gagne-en-photorealisme.N2206124"
   },
   {
-    title: "DALL-E 3 et l'intégration dans l'écosystème Microsoft",
-    description: "Comment la génération d'images s'est démocratisée via Copilot et Bing, facilitant la création visuelle pour les professionnels.",
+    title: "DALL-E 3 : L'IA créative s'invite dans Microsoft Copilot",
+    description: "Comment Microsoft a démocratisé la génération d'images haute définition en l'intégrant directement dans ses outils de travail quotidiens.",
     date: "Décembre 2025",
     category: "Outils Pro",
-    source: "Microsoft Tech",
-    url: "https://www.microsoft.com/en-us/bing"
+    source: "Numerama",
+    url: "https://www.numerama.com/tech/1511197-dall-e-3-est-disponible-gratuitement-dans-bing-comment-lutiliser.html"
   },
   {
     title: "Éthique et Copyright : L'encadrement des images IA",
-    description: "Le point sur les régulations européennes (AI Act) et les solutions de marquage numérique (watermarking) pour identifier les contenus générés.",
+    description: "Le point sur les régulations européennes (AI Act) et les solutions de marquage numérique pour identifier les contenus générés.",
     date: "Novembre 2025",
     category: "Régulation",
-    source: "Le Monde Informatique",
-    url: "https://www.lemondeinformatique.fr"
+    source: "ZDNet",
+    url: "https://www.zdnet.fr/actualites/intelligence-artificielle-l-ue-s-accorde-sur-l-ai-act-ce-qu-il-faut-retenir-39963248.htm"
   }
 ]
 
@@ -53,7 +53,6 @@ export const Veille = () => {
               rel="noopener noreferrer"
               className="group relative rounded-3xl border border-zinc-800 bg-zinc-900/40 p-8 transition-all duration-500 hover:border-cyan-500/50 hover:shadow-[0_0_30px_-10px_rgba(6,182,212,0.2)] overflow-hidden block"
             >
-              {/* Effet de lumière Cyan au survol */}
               <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-cyan-500/5 blur-[50px] transition-all group-hover:bg-cyan-500/20" />
               
               <div className="relative z-20">
@@ -75,7 +74,7 @@ export const Veille = () => {
                 <div className="flex justify-between items-center pt-4 border-t border-zinc-800/50">
                   <span className="text-xs text-zinc-500 font-medium italic">Source: {article.source}</span>
                   <div className="flex items-center gap-2 text-xs font-bold text-zinc-600 group-hover:text-cyan-400 transition-colors">
-                    VOIR L'ACTU
+                    LIRE L'ANALYSE
                     <ExternalLink size={14} />
                   </div>
                 </div>
