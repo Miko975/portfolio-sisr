@@ -12,11 +12,11 @@ const articles = [
   },
   {
     title: "Midjourney v6 : Le photoréalisme poussé à l'extrême",
-    description: "Test et nouveautés de la version 6 : meilleure compréhension des nuances, rendu des mains amélioré et intégration du texte dans les images.",
+    description: "Découvrez les nouveautés de la version 6 : une meilleure compréhension des prompts, un réalisme bluffant et la capacité d'écrire du texte.",
     date: "Janvier 2026",
     category: "IA Générative",
-    source: "Midjourney Docs",
-    url: "https://docs.midjourney.com/docs/model-versions"
+    source: "L'Éclaireur Fnac",
+    url: "https://leclaireur.fnac.com/article/433221-midjourney-v6-est-disponible-pourquoi-est-ce-une-revolution/"
   },
   {
     title: "DALL-E 3 : L'IA créative s'invite dans Microsoft Copilot",
