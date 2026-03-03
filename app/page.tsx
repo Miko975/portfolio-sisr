@@ -3,8 +3,9 @@ import { Hero } from "@/components/hero"
 import { Presentation } from "@/components/presentation"
 import { BentoGrid } from "@/components/bento-grid"
 import { Projects } from "@/components/projects"
+import { Experience } from "@/components/experience" // <-- NOUVEL IMPORT
 import { Veille } from "@/components/veille" 
-import { About } from "@/components/about"
+import { About } from "@/components/about" // C'est ton composant Parcours
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -12,20 +13,18 @@ export default function Home() {
     <main className="relative min-h-screen bg-background">
       <Navbar />
       
-      {/* On garde le Hero tel quel car il occupe déjà beaucoup d'espace */}
       <Hero />
       
-      {/* On crée un conteneur pour tout le reste avec un espacement (gap) important */}
       <div className="flex flex-col gap-32 md:gap-40 pb-20">
         <Presentation />
         
-        {/* BentoGrid contient maintenant l'Expertise ET les Certifications */}
         <BentoGrid />
         
-        {/* Ta section Projets */}
         <Projects />
 
-        {/* Ajout de la section Veille Technologique ici */}
+        {/* On insère l'Expérience ici, juste avant la Veille */}
+        <Experience />
+
         <Veille />
         
         <About />
@@ -34,4 +33,3 @@ export default function Home() {
     </main>
   )
 }
-
