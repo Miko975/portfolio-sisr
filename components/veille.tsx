@@ -3,46 +3,55 @@ import { ExternalLink } from 'lucide-react'
 
 const articles = [
   {
-    title: "Vulnérabilité Critique dans OpenSSL",
-    description: "Mise à jour urgente disponible pour OpenSSL 3.0. Tous les administrateurs doivent appliquer le patch immédiatement.",
+    title: "OpenAI Sora : La révolution du texte-en-vidéo",
+    description: "Analyse des capacités de Sora à générer des scènes complexes et ultra-réalistes, marquant une étape majeure dans la génération visuelle par IA.",
     date: "Février 2026",
-    category: "Sécurité",
-    source: "NIST"
+    category: "Innovation",
+    source: "OpenAI",
+    url: "https://openai.com/sora"
   },
   {
-    title: "Windows 11 - Nouvelles Fonctionnalités de Sécurité",
-    description: "Microsoft introduit de nouvelles protections contre les malwares et améliore la gestion des mises à jour de sécurité.",
-    date: "Février 2026",
-    category: "Sécurité",
-    source: "Microsoft"
-  },
-  {
-    title: "Tendance : Adoption du Cloud Computing",
-    description: "Les PME adoptent de plus en plus les solutions cloud pour réduire les coûts d'infrastructure IT.",
+    title: "Midjourney v6 : Le photoréalisme poussé à l'extrême",
+    description: "Test des nouvelles fonctionnalités de Midjourney permettant une meilleure compréhension des prompts et un rendu des textures quasi indiscernable du réel.",
     date: "Janvier 2026",
-    category: "Tendance",
-    source: "IDC"
+    category: "IA Générative",
+    source: "Midjourney",
+    url: "https://www.midjourney.com"
   },
   {
-    title: "Python 3.13 - Améliorations de Performance",
-    description: "Nouvelle version de Python avec optimisations significatives et nouvelles fonctionnalités pour les développeurs.",
-    date: "Janvier 2026",
-    category: "Développement",
-    source: "Python.org"
+    title: "DALL-E 3 et l'intégration dans l'écosystème Microsoft",
+    description: "Comment la génération d'images s'est démocratisée via Copilot et Bing, facilitant la création visuelle pour les professionnels.",
+    date: "Décembre 2025",
+    category: "Outils Pro",
+    source: "Microsoft Tech",
+    url: "https://www.microsoft.com/en-us/bing"
+  },
+  {
+    title: "Éthique et Copyright : L'encadrement des images IA",
+    description: "Le point sur les régulations européennes (AI Act) et les solutions de marquage numérique (watermarking) pour identifier les contenus générés.",
+    date: "Novembre 2025",
+    category: "Régulation",
+    source: "Le Monde Informatique",
+    url: "https://www.lemondeinformatique.fr"
   }
 ]
 
 export const Veille = () => {
   return (
-    <section id="veille" className="px-6 scroll-mt-24 max-w-6xl mx-auto">
-        <h3 className="text-cyan-400 uppercase tracking-[0.3em] text-sm font-bold mb-2">Veille Technologique</h3>
-        <h2 className="text-3xl font-bold mb-12 text-white">Actualités IT</h2>
+    <section id="veille" className="px-6 py-20 scroll-mt-24 max-w-6xl mx-auto">
+        <div className="mb-12">
+          <h3 className="text-cyan-400 uppercase tracking-[0.3em] text-sm font-bold mb-2">Veille Technologique</h3>
+          <h2 className="text-3xl font-bold text-white">L'IA Générative d'Images</h2>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {articles.map((article, index) => (
-            <div 
+            <a 
               key={index} 
-              className="group relative rounded-3xl border border-zinc-800 bg-zinc-900/40 p-8 transition-all duration-500 hover:border-cyan-500/50 hover:shadow-[0_0_30px_-10px_rgba(6,182,212,0.2)] overflow-hidden"
+              href={article.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative rounded-3xl border border-zinc-800 bg-zinc-900/40 p-8 transition-all duration-500 hover:border-cyan-500/50 hover:shadow-[0_0_30px_-10px_rgba(6,182,212,0.2)] overflow-hidden block"
             >
               {/* Effet de lumière Cyan au survol */}
               <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-cyan-500/5 blur-[50px] transition-all group-hover:bg-cyan-500/20" />
@@ -64,11 +73,14 @@ export const Veille = () => {
                 </p>
 
                 <div className="flex justify-between items-center pt-4 border-t border-zinc-800/50">
-                  <span className="text-xs text-zinc-500 font-medium">Source: {article.source}</span>
-                  <ExternalLink size={14} className="text-zinc-600 group-hover:text-cyan-400 transition-colors" />
+                  <span className="text-xs text-zinc-500 font-medium italic">Source: {article.source}</span>
+                  <div className="flex items-center gap-2 text-xs font-bold text-zinc-600 group-hover:text-cyan-400 transition-colors">
+                    VOIR L'ACTU
+                    <ExternalLink size={14} />
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
     </section>
