@@ -3,35 +3,35 @@ import { ExternalLink } from 'lucide-react'
 
 const articles = [
   {
-    title: "OpenAI Sora : Création de vidéo à partir de texte",
-    description: "Documentation officielle présentant les capacités du modèle Sora à générer des vidéos réalistes de 60 secondes en respectant la cohérence physique.",
-    date: "Mars 2026",
+    title: "OpenAI Sora : La révolution du texte-en-vidéo",
+    description: "Analyse des capacités de Sora à générer des scènes complexes et ultra-réalistes, marquant une étape majeure dans la génération visuelle par IA.",
+    date: "Février 2026",
     category: "Innovation",
-    source: "OpenAI Blog",
-    url: "https://openai.com/research/video-generation-models-as-world-simulators"
+    source: "OpenAI News",
+    url: "https://openai.com/sora"
   },
   {
-    title: "Midjourney v6 : Améliorations du Modèle",
-    description: "Notes de version sur le photoréalisme accru, la compréhension des prompts complexes et la capacité inédite à générer du texte lisible dans les images.",
+    title: "Midjourney v6 : Le photoréalisme poussé à l'extrême",
+    description: "Test et nouveautés de la version 6 : meilleure compréhension des nuances, rendu des mains amélioré et intégration du texte dans les images.",
     date: "Janvier 2026",
     category: "IA Générative",
-    source: "Midjourney Documentation",
+    source: "Midjourney Docs",
     url: "https://docs.midjourney.com/docs/model-versions"
   },
   {
-    title: "DALL-E 3 : Intégration et Sécurité",
-    description: "Présentation du système DALL-E 3, son intégration native dans ChatGPT et les mesures de sécurité contre les contenus inappropriés.",
+    title: "DALL-E 3 : L'IA créative s'invite dans Microsoft Copilot",
+    description: "Comment Microsoft a démocratisé la génération d'images haute définition en l'intégrant directement dans ses outils de travail quotidiens.",
     date: "Décembre 2025",
     category: "Outils Pro",
     source: "OpenAI Product",
     url: "https://openai.com/dall-e-3"
   },
   {
-    title: "IA Act : Le cadre légal européen",
-    description: "Synthèse officielle de la première loi au monde sur l'intelligence artificielle, classant les risques et encadrant les systèmes génératifs.",
+    title: "Éthique et Copyright : L'encadrement des images IA",
+    description: "Le point sur les régulations européennes (AI Act) et les solutions de marquage numérique pour identifier les contenus générés.",
     date: "Novembre 2025",
     category: "Régulation",
-    source: "Parlement Européen",
+    source: "Europarl",
     url: "https://www.europarl.europa.eu/news/fr/headlines/society/20230601STO93804/loi-sur-l-ia-de-l-ue-premiere-reglementation-de-l-intelligence-artificielle"
   }
 ]
@@ -74,7 +74,7 @@ export const Veille = () => {
                 <div className="flex justify-between items-center pt-4 border-t border-zinc-800/50">
                   <span className="text-xs text-zinc-500 font-medium italic">Source: {article.source}</span>
                   <div className="flex items-center gap-2 text-xs font-bold text-zinc-600 group-hover:text-cyan-400 transition-colors">
-                    CONSULTER
+                    VOIR LA SOURCE
                     <ExternalLink size={14} />
                   </div>
                 </div>
