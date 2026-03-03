@@ -15,8 +15,8 @@ const articles = [
     description: "Découvrez les nouveautés de la version 6 : une meilleure compréhension des prompts, un réalisme bluffant et la capacité d'écrire du texte.",
     date: "Janvier 2026",
     category: "IA Générative",
-    source: "L'Éclaireur Fnac",
-    url: "https://leclaireur.fnac.com/article/433221-midjourney-v6-est-disponible-pourquoi-est-ce-une-revolution/"
+    source: "Blog du Modérateur",
+    url: "https://www.blogdumoderateur.com/midjourney-v6-tout-savoir/"
   },
   {
     title: "DALL-E 3 : L'IA créative s'invite dans Microsoft Copilot",
