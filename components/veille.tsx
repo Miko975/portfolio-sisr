@@ -1,5 +1,5 @@
 import React from 'react'
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink, Info } from 'lucide-react'
 
 const articles = [
   {
@@ -16,7 +16,6 @@ const articles = [
     date: "Janvier 2026",
     category: "IA Générative",
     source: "Midjourney Help",
-    // LIEN D'ACCUEIL DOC : IMPOSSIBLE QU'IL SOIT EN 404
     url: "https://docs.midjourney.com/"
   },
   {
@@ -42,7 +41,24 @@ export const Veille = () => {
     <section id="veille" className="px-6 py-20 scroll-mt-24 max-w-6xl mx-auto">
         <div className="mb-12">
           <h3 className="text-cyan-400 uppercase tracking-[0.3em] text-sm font-bold mb-2">Veille Technologique</h3>
-          <h2 className="text-3xl font-bold text-white">L'IA Générative d'Images</h2>
+          <h2 className="text-3xl font-bold text-white mb-8">L'IA Générative d'Images</h2>
+          
+          {/* Nouveau bloc d'explication pour le jury */}
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-6 md:p-8 mb-12">
+            <div className="flex items-start gap-4">
+              <div className="bg-cyan-500/10 p-2 rounded-lg shrink-0">
+                <Info className="text-cyan-400" size={24} />
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-2">Ma démarche de veille</h4>
+                <p className="text-zinc-400 text-sm leading-relaxed">
+                  La veille technologique consiste à surveiller les évolutions techniques et les innovations de manière systématique pour rester à jour. 
+                  Pour mon parcours, j'ai choisi le thème de <strong>l'IA générative d'images et de contenus visuels</strong>. 
+                  C'est un domaine qui transforme radicalement la création numérique et pose de nouveaux défis en termes d'infrastructure et d'éthique.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
