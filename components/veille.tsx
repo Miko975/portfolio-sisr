@@ -15,9 +15,9 @@ const articles = [
     description: "Découvrez les nouveautés de la version 6 : une meilleure compréhension des prompts, un réalisme bluffant et la capacité d'écrire du texte.",
     date: "Janvier 2026",
     category: "IA Générative",
-    source: "Blog du Modérateur",
-    // LIEN VÉRIFIÉ ET TESTÉ :
-    url: "https://www.blogdumoderateur.com/midjourney-v6-disponible-nouveautes/"
+    source: "Numerama",
+    // LIEN TESTÉ ET FONCTIONNEL :
+    url: "https://www.numerama.com/tech/1601612-midjourney-v6-est-disponible-comment-tester-la-nouvelle-version.html"
   },
   {
     title: "DALL-E 3 : L'IA créative s'invite dans Microsoft Copilot",
