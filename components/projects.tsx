@@ -2,12 +2,12 @@ import React from 'react'
 
 const projects = [
   {
-    title: "Mise en place d'un réseau local",
-    description: "Configuration d'un petit réseau avec routeur, switch et 3 postes clients. Mise en place du DHCP et des partages de fichiers.",
+    title: "Déploiement de postes informatiques",
+    description: "Montage, masterisation et installation de postes de travail pour les collaborateurs. Configuration logicielle et intégration au domaine de l'entreprise.",
   },
   {
-    title: "Installation d'un serveur web",
-    description: "Installation d'Apache sur Linux, configuration des droits d'accès et création d'un site web simple.",
+    title: "Support et assistance utilisateur",
+    description: "Gestion des tickets d'incidents (Helpdesk), diagnostic des pannes matérielles/logicielles et accompagnement des utilisateurs au quotidien.",
   },
   {
     title: "Création d'un site web pour une entreprise",
@@ -17,7 +17,7 @@ const projects = [
 
 export const Projects = () => {
   return (
-    <section id="projets" className="px-6 scroll-mt-24 max-w-6xl mx-auto">
+    <section id="projets" className="px-6 py-20 scroll-mt-24 max-w-6xl mx-auto">
         <h3 className="text-cyan-400 uppercase tracking-[0.3em] text-sm font-bold mb-2">Réalisations</h3>
         <h2 className="text-3xl font-bold mb-12 text-white">Mes Projets</h2>
 
