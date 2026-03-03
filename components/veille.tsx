@@ -11,13 +11,13 @@ const articles = [
     url: "https://openai.com/sora"
   },
   {
-    title: "Midjourney v6 : Le photoréalisme poussé à l'extrême",
-    description: "Découvrez les nouveautés de la version 6 : une meilleure compréhension des prompts, un réalisme bluffant et la capacité d'écrire du texte.",
+    title: "IA Générative 2026 : L'évolution des modèles visuels",
+    description: "Comment les nouveaux modèles de diffusion transforment la création numérique, avec un focus sur la précision et l'intégration professionnelle.",
     date: "Janvier 2026",
     category: "IA Générative",
-    source: "Numerama",
-    // LIEN TESTÉ ET FONCTIONNEL :
-    url: "https://www.numerama.com/tech/1601612-midjourney-v6-est-disponible-comment-tester-la-nouvelle-version.html"
+    source: "Adobe Blog",
+    // LIEN STABLE ET RÉCENT
+    url: "https://blog.adobe.com/fr/sujets/intelligence-artificielle"
   },
   {
     title: "DALL-E 3 : L'IA créative s'invite dans Microsoft Copilot",
