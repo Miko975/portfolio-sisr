@@ -11,13 +11,13 @@ const articles = [
     url: "https://openai.com/sora"
   },
   {
-    title: "IA Générative 2026 : L'évolution des modèles visuels",
-    description: "Comment les nouveaux modèles de diffusion transforment la création numérique, avec un focus sur la précision et l'intégration professionnelle.",
+    title: "Midjourney v6 : Le photoréalisme poussé à l'extrême",
+    description: "Documentation technique sur les nouveautés de la version 6 : réalisme accru, meilleure gestion des prompts et intégration de texte.",
     date: "Janvier 2026",
     category: "IA Générative",
-    source: "Adobe Blog",
-    // LIEN STABLE ET RÉCENT
-    url: "https://blog.adobe.com/fr/sujets/intelligence-artificielle"
+    source: "Midjourney Doc",
+    // LIEN OFFICIEL DOCUMENTATION (STABLE)
+    url: "https://docs.midjourney.com/docs/model-versions"
   },
   {
     title: "DALL-E 3 : L'IA créative s'invite dans Microsoft Copilot",
