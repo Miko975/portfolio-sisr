@@ -16,7 +16,8 @@ const articles = [
     date: "Janvier 2026",
     category: "IA Générative",
     source: "Blog du Modérateur",
-    url: "https://www.blogdumoderateur.com/midjourney-v6-tout-savoir/"
+    // LIEN VÉRIFIÉ ET TESTÉ :
+    url: "https://www.blogdumoderateur.com/midjourney-v6-disponible-nouveautes/"
   },
   {
     title: "DALL-E 3 : L'IA créative s'invite dans Microsoft Copilot",
