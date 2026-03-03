@@ -7,8 +7,8 @@ const articles = [
     description: "Analyse des capacités de Sora à générer des scènes complexes et ultra-réalistes, marquant une étape majeure dans la génération visuelle par IA.",
     date: "Février 2026",
     category: "Innovation",
-    source: "Le Monde Informatique",
-    url: "https://www.lemondeinformatique.fr/actualites/lire-sora-l-ia-generatrice-de-videos-d-openai-fait-prouesse-sur-prouesse-92978.html"
+    source: "Les Échos",
+    url: "https://www.lesechos.fr/tech-medias/intelligence-artificielle/ia-generative-cinq-questions-sur-sora-le-nouvel-outil-stupefiant-dopenai-2076413"
   },
   {
     title: "Midjourney v6 : Le photoréalisme poussé à l'extrême",
@@ -31,8 +31,8 @@ const articles = [
     description: "Le point sur les régulations européennes (AI Act) et les solutions de marquage numérique pour identifier les contenus générés.",
     date: "Novembre 2025",
     category: "Régulation",
-    source: "ZDNet",
-    url: "https://www.zdnet.fr/actualites/intelligence-artificielle-l-ue-s-accorde-sur-l-ai-act-ce-qu-il-faut-retenir-39963248.htm"
+    source: "Le Monde IT",
+    url: "https://www.lemondeinformatique.fr/actualites/lire-l-ai-act-europeen-definitivement-approuve-93165.html"
   }
 ]
 
@@ -74,7 +74,7 @@ export const Veille = () => {
                 <div className="flex justify-between items-center pt-4 border-t border-zinc-800/50">
                   <span className="text-xs text-zinc-500 font-medium italic">Source: {article.source}</span>
                   <div className="flex items-center gap-2 text-xs font-bold text-zinc-600 group-hover:text-cyan-400 transition-colors">
-                    LIRE L'ANALYSE
+                    LIRE L'ARTICLE
                     <ExternalLink size={14} />
                   </div>
                 </div>
