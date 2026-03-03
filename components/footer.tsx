@@ -3,7 +3,8 @@ import { Linkedin, Mail, Phone } from "lucide-react"
 const socials = [
   { 
     label: "LinkedIn", 
-    href: "www.linkedin.com/in/mikail-ozturk-469901383", 
+    // AJOUT DU HTTPS:// OBLIGATOIRE POUR SORTIR DU SITE
+    href: "https://www.linkedin.com/in/mikail-ozturk-469901383", 
     icon: Linkedin 
   },
 ]
