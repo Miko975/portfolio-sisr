@@ -3,7 +3,7 @@ import { Linkedin, Mail, Phone } from "lucide-react"
 const socials = [
   { 
     label: "LinkedIn", 
-    href: "https://www.linkedin.com/in/mikail-ozturk-b8a7b32a7/", 
+    href: "www.linkedin.com/in/mikail-ozturk-469901383", 
     icon: Linkedin 
   },
 ]
