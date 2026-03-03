@@ -6,6 +6,7 @@ const links = [
   { label: "Presentation", href: "#presentation" },
   { label: "Competences", href: "#competences" },
   { label: "Projets", href: "#projets" },
+  { label: "Expérience", href: "#experience" }, // <-- AJOUT DE L'ONGLET EXPÉRIENCE
   { label: "Veille", href: "#veille" },
   { label: "Parcours", href: "#parcours" },
   { label: "Contact", href: "#contact" },
@@ -29,7 +30,6 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        {/* CHANGEMENT ICI : REMPLACEMENT DE M.O PAR TON NOM */}
         <a href="#" className="text-lg font-bold tracking-tight text-foreground whitespace-nowrap">
           {"Mikail Ozturk"}
           <span className="text-cyan-400">{"."}</span>
