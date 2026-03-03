@@ -3,15 +3,15 @@ import React from 'react'
 const projects = [
   {
     title: "Déploiement de postes informatiques",
-    description: "Montage, masterisation et installation de postes de travail pour les collaborateurs. Configuration logicielle et intégration au domaine de l'entreprise.",
+    description: "Montage, préparation et installation de postes de travail pour des entreprises. Configuration logicielle et intégration au domaine de l'entreprise.",
   },
   {
     title: "Support et assistance utilisateur",
-    description: "Gestion des tickets d'incidents (Helpdesk), diagnostic des pannes matérielles/logicielles et accompagnement des utilisateurs au quotidien.",
+    description: "Gestion des tickets d'incidents, diagnostic des pannes matérielles/logicielles et accompagnement des utilisateurs au quotidien.",
   },
   {
     title: "Création d'un site web pour une entreprise",
-    description: "Développement d'un site web vitrine pour une petite entreprise avec design responsive et formulaire de contact.",
+    description: "Développement d'un site web vitrine pour une petite entreprise de restauration fictive ",
   }
 ]
 
