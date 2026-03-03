@@ -11,13 +11,13 @@ const articles = [
     url: "https://openai.com/sora"
   },
   {
-    title: "Midjourney v6 : Le photoréalisme poussé à l'extrême",
-    description: "Documentation technique sur les nouveautés de la version 6 : réalisme accru, meilleure gestion des prompts et intégration de texte.",
+    title: "Midjourney : Documentation et Modèles",
+    description: "Accès à la documentation officielle de Midjourney détaillant les versions du modèle (V1 à V6) et les guides d'utilisation technique.",
     date: "Janvier 2026",
     category: "IA Générative",
-    source: "Midjourney Doc",
-    // LIEN OFFICIEL DOCUMENTATION (STABLE)
-    url: "https://docs.midjourney.com/docs/model-versions"
+    source: "Midjourney Help",
+    // LIEN D'ACCUEIL DOC : IMPOSSIBLE QU'IL SOIT EN 404
+    url: "https://docs.midjourney.com/"
   },
   {
     title: "DALL-E 3 : L'IA créative s'invite dans Microsoft Copilot",
