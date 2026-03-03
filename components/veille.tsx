@@ -1,5 +1,5 @@
 import React from 'react'
-import { ExternalLink, Info } from 'lucide-react'
+import { ExternalLink, Terminal, Lightbulb, Target } from 'lucide-react'
 
 const articles = [
   {
@@ -39,25 +39,43 @@ const articles = [
 export const Veille = () => {
   return (
     <section id="veille" className="px-6 py-20 scroll-mt-24 max-w-6xl mx-auto">
-        <div className="mb-12">
+        <div className="mb-16">
           <h3 className="text-cyan-400 uppercase tracking-[0.3em] text-sm font-bold mb-2">Veille Technologique</h3>
-          <h2 className="text-3xl font-bold text-white mb-8">L'IA Générative d'Images</h2>
+          <h2 className="text-4xl font-bold text-white mb-12">Analyse & Prospective</h2>
           
-          {/* Nouveau bloc d'explication pour le jury */}
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/20 p-6 md:p-8 mb-12">
-            <div className="flex items-start gap-4">
-              <div className="bg-cyan-500/10 p-2 rounded-lg shrink-0">
-                <Info className="text-cyan-400" size={24} />
+          {/* Section Définition et Thème - Style Professionnel */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+            {/* Carte 1 : C'est quoi la veille */}
+            <div className="group relative rounded-3xl border border-zinc-800 bg-zinc-900/20 p-8 transition-all hover:border-zinc-700">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-cyan-500/10 p-3 rounded-2xl">
+                  <Terminal className="text-cyan-400" size={24} />
+                </div>
+                <h4 className="text-xl font-bold text-white">Qu'est-ce qu'une veille ?</h4>
               </div>
-              <div>
-                <h4 className="text-white font-semibold mb-2">Ma démarche de veille</h4>
-                <p className="text-zinc-400 text-sm leading-relaxed">
-                  La veille technologique consiste à surveiller les évolutions techniques et les innovations de manière systématique pour rester à jour. 
-                  Pour mon parcours, j'ai choisi le thème de <strong>l'IA générative d'images et de contenus visuels</strong>. 
-                  C'est un domaine qui transforme radicalement la création numérique et pose de nouveaux défis en termes d'infrastructure et d'éthique.
-                </p>
-              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                La veille technologique est une activité consistant à <strong>anticiper les évolutions</strong> en s'informant régulièrement sur les nouveautés du secteur. Pour un technicien, c'est l'assurance de maintenir ses compétences face à l'obsolescence rapide des outils.
+              </p>
             </div>
+
+            {/* Carte 2 : Mon thème */}
+            <div className="group relative rounded-3xl border border-cyan-500/20 bg-cyan-500/5 p-8 transition-all hover:border-cyan-500/40">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="bg-cyan-500/20 p-3 rounded-2xl">
+                  <Target className="text-cyan-400" size={24} />
+                </div>
+                <h4 className="text-xl font-bold text-white">Mon Thème : L'IA Visuelle</h4>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                J'ai choisi d'explorer <strong>l'IA générative d'images</strong>. Ce domaine redéfinit les limites de l'infrastructure Cloud et du calcul GPU, tout en soulevant des questions majeures de cybersécurité et de gestion de la donnée en entreprise.
+              </p>
+            </div>
+          </div>
+          
+          <div className="flex items-center gap-4 mb-8">
+            <div className="h-px bg-zinc-800 flex-grow"></div>
+            <span className="text-zinc-500 text-xs font-bold uppercase tracking-widest">Flux d'actualités</span>
+            <div className="h-px bg-zinc-800 flex-grow"></div>
           </div>
         </div>
 
@@ -68,7 +86,7 @@ export const Veille = () => {
               href={article.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative rounded-3xl border border-zinc-800 bg-zinc-900/40 p-8 transition-all duration-500 hover:border-cyan-500/50 hover:shadow-[0_0_30px_-10px_rgba(6,182,212,0.2)] overflow-hidden block"
+              className="group relative rounded-3xl border border-zinc-800 bg-zinc-900/40 p-8 transition-all duration-500 hover:border-cyan-500/50 hover:shadow-[0_0_30px_-10px_rgba(6,182,212,0.1)] overflow-hidden block"
             >
               <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-cyan-500/5 blur-[50px] transition-all group-hover:bg-cyan-500/20" />
               
