@@ -1,8 +1,11 @@
-import { Github, Linkedin, Mail, Phone } from "lucide-react"
+import { Linkedin, Mail, Phone } from "lucide-react"
 
 const socials = [
-  { label: "GitHub", href: "https://github.com/", icon: Github },
-  { label: "LinkedIn", href: "https://linkedin.com/", icon: Linkedin },
+  { 
+    label: "LinkedIn", 
+    href: "https://www.linkedin.com/in/mikail-ozturk-b8a7b32a7/", 
+    icon: Linkedin 
+  },
 ]
 
 export function Footer() {
@@ -15,7 +18,6 @@ export function Footer() {
             {"Contact"}
           </p>
           
-          {/* Titre réduit à text-3xl */}
           <h2 className="text-3xl font-bold tracking-tight text-foreground">
             {"Travaillons ensemble"}
           </h2>
@@ -23,16 +25,16 @@ export function Footer() {
             {"Vous cherchez un stagiaire ou un alternant motivé ? N'hésitez pas à me contacter."}
           </p>
 
-          <div className="mt-8 flex items-center gap-4">
+          <div className="mt-8 flex items-center justify-center">
             {socials.map((social) => (
               <a
                 key={social.label}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-card text-muted-foreground transition-all hover:border-cyan-400/40 hover:text-foreground"
+                className="flex h-12 w-12 items-center justify-center rounded-xl border border-border bg-card text-muted-foreground transition-all hover:border-cyan-400/40 hover:text-foreground"
               >
-                <social.icon className="h-4.5 w-4.5" />
+                <social.icon className="h-5 w-5" />
               </a>
             ))}
           </div>
@@ -44,7 +46,7 @@ export function Footer() {
               </div>
               <div className="min-w-0">
                 <p className="text-muted-foreground text-[10px] uppercase font-bold tracking-wider mb-1">Email</p>
-                <span className="text-orange-500 text-sm font-semibold">
+                <span className="text-orange-500 text-sm font-semibold truncate block">
                   mikailozturk67000@gmail.com
                 </span>
               </div>
