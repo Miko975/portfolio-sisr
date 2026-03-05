@@ -1,16 +1,17 @@
 "use client"
 
 import React, { useState } from 'react'
-import { ChevronDown, ChevronUp, Terminal, Layout, ShieldCheck, Briefcase, Info, Award, AlertTriangle, CheckCircle2 } from 'lucide-react'
+import { ChevronDown, ChevronUp, Terminal, Layout, ShieldCheck, Info, Award, AlertTriangle, CheckCircle2 } from 'lucide-react'
 
 const projects = [
   {
     title: "Déploiement de postes informatiques",
-    shortDescription: "Montage et configuration complète d'une dizaine de postes et serveurs pour un cabinet dentaire.",
-    context: "Stage chez l'ESN AMR Informatique (Deuxième année)",
-    description: "Ce projet consistait à préparer l'infrastructure matérielle pour un nouveau client de l'ESN, un cabinet de dentiste. J'ai dû monter physiquement une dizaine de postes de travail performants, installer les systèmes d'exploitation (Windows 11) et assurer l'intégration complète au domaine de l'entreprise. J'ai également géré l'installation des logiciels métiers spécifiques au domaine dentaire et des utilitaires nécessaires au bon fonctionnement du parc.",
+    // Ajout de "Stage de deuxième année"
+    shortDescription: "Stage de deuxième année : Montage et configuration complète d'une dizaine de postes et serveurs pour un cabinet dentaire.",
+    context: "Stage chez l'ESN AMR Informatique",
+    description: "Ce projet consistait à préparer l'infrastructure matérielle pour un nouveau client de l'ESN, un cabinet de dentiste. J'ai dû monter physiquement une dizaine de postes de travail performants, installer les systèmes d'exploitation (Windows 11) et assurer l'intégration complète au domaine de l'entreprise. J'ai également géré l'installation des logiciels métiers spécifiques au domaine dentaire.",
     challenges: "La principale difficulté a été de respecter des délais très courts pour ne pas perturber les consultations du cabinet dentaire. Il a également fallu gérer la compatibilité de certains logiciels métiers anciens avec les nouveaux systèmes d'exploitation installés.",
-    solution: "Mise en place d'un planning de déploiement par phases, réalisé en dehors des heures de consultation pour éviter toute interruption d'activité. J'ai assuré un suivi rigoureux de chaque poste pour garantir une transition fluide et immédiate dès la reprise des consultations.",
+    solution: "Mise en place d'un planning de déploiement par phases, réalisé en dehors des heures de consultation pour éviter toute interruption d'activité. J'ai assuré un suivi rigoureux de chaque poste pour garantir une transition fluide.",
     skills: [
       "Installation et configuration de systèmes d'exploitation (Windows)",
       "Gestion rigoureuse du matériel et inventaire technique",
@@ -21,11 +22,12 @@ const projects = [
   },
   {
     title: "Support et assistance utilisateur",
-    shortDescription: "Gestion complète des tickets d'incidents via Axonaut et diagnostic pannes matérielles/logicielles.",
-    context: "Stage chez l'ESN AMR Informatique (Première et Deuxième année)",
-    description: "Au sein de l'équipe de support de l'ESN, j'étais en charge de la gestion du flux de tickets via l'outil Axonaut. Ma mission consistait à diagnostiquer et résoudre des pannes variées : problèmes de connectivité réseau, dysfonctionnements logiciels, configuration de périphériques et assistance directe aux utilisateurs. J'ai dû faire preuve de réactivité et de clarté pour accompagner les clients dans la résolution de leurs incidents quotidiens.",
-    challenges: "Le défi majeur a été le diagnostic à distance de pannes complexes, nécessitant une écoute active et une vulgarisation technique efficace auprès d'utilisateurs parfois en situation d'urgence ou de stress.",
-    solution: "Utilisation systématique d'outils de prise en main à distance (TeamViewer/AnyDesk) pour visualiser directement les erreurs. J'ai également créé et partagé des guides de procédures simplifiés avec les utilisateurs pour les aider à identifier les symptômes précis, ce qui a réduit le temps moyen de résolution des incidents.",
+    // Ajout de "Première et deuxième année de stage"
+    shortDescription: "Première et deuxième année de stage : Gestion complète des tickets d'incidents via Axonaut et diagnostic pannes matérielles/logicielles.",
+    context: "Stage chez l'ESN AMR Informatique",
+    description: "Au sein de l'équipe de support de l'ESN, j'étais en charge de la gestion du flux de tickets via l'outil Axonaut. Ma mission consistait à diagnostiquer et résoudre des pannes variées : problèmes de connectivité réseau, dysfonctionnements logiciels, configuration de périphériques et assistance directe aux utilisateurs.",
+    challenges: "Le défi majeur a été le diagnostic à distance de pannes complexes, nécessitant une écoute active et une vulgarisation technique efficace auprès d'utilisateurs parfois en situation d'urgence.",
+    solution: "Utilisation systématique d'outils de prise en main à distance (TeamViewer/AnyDesk) pour visualiser directement les erreurs et création de guides de procédures simplifiés.",
     skills: [
       "Diagnostic méthodique de pannes (Hardware & Software)",
       "Maîtrise de l'outil de gestion Axonaut",
@@ -36,11 +38,12 @@ const projects = [
   },
   {
     title: "Création d'un site web pour une entreprise",
-    shortDescription: "Développement complet d'un site vitrine responsive pour une entreprise de restauration.",
-    context: "Projet personnel réalisé avec un ami (2023)",
-    description: "Dans le cadre d'un projet collaboratif, nous avons conçu et développé un site web vitrine moderne pour une entreprise de restauration. Le projet incluait la création d'une interface utilisateur (UX/UI) intuitive, le développement d'un design responsive et la mise en place d'une solution pour la gestion des réservations. Nous avons également géré l'hébergement et le déploiement final du site sur un serveur web.",
+    // Ajout de "Projet personnel en 2024"
+    shortDescription: "Projet personnel en 2024 : Développement complet d'un site vitrine responsive pour une entreprise de restauration.",
+    context: "Collaboration indépendante",
+    description: "Dans le cadre d'un projet collaboratif, nous avons conçu et développé un site web vitrine moderne pour une entreprise de restauration. Le projet incluait la création d'une interface utilisateur (UX/UI) intuitive, le développement d'un design responsive et la mise en place d'une solution pour la gestion des réservations.",
     challenges: "Le site ne s'affichait pas bien sur les téléphones. Le texte et les images dépassaient de l'écran, ce qui rendait la navigation très compliquée sur smartphone.",
-    solution: "J'ai simplement modifié les tailles des éléments dans le code pour qu'ils s'adaptent automatiquement à l'écran. J'ai ensuite utilisé un simulateur de mobile pour vérifier que tout s'affichait correctement et que plus rien ne dépassait.",
+    solution: "J'ai simplement modifié les tailles des éléments dans le code pour qu'ils s'adaptent automatiquement à l'écran. J'ai ensuite utilisé un simulateur de mobile pour vérifier que tout s'affichait correctement.",
     skills: [
       "Conception UX/UI moderne et responsive design",
       "Gestion de projet collaborative (Git/GitHub)",
@@ -55,7 +58,7 @@ export const Projects = () => {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   return (
-    <section id="projets" className="px-6 py-20 scroll-mt-24 max-w-6xl mx-auto">
+    <section id="projets" className="px-6 py-20 scroll-mt-24 max-w-6xl mx-auto text-left">
         <h3 className="text-cyan-400 uppercase tracking-[0.3em] text-xs font-bold mb-2">Réalisations</h3>
         <h2 className="text-4xl font-bold mb-12 text-white tracking-tight">Mes Projets</h2>
 
@@ -69,7 +72,7 @@ export const Projects = () => {
                 className="group relative rounded-[2rem] border border-zinc-800 bg-zinc-900/20 p-8 md:p-10 transition-all duration-500 hover:border-cyan-500/30 overflow-hidden"
               >
                 <div className="flex flex-col md:flex-row gap-8 items-start relative z-10">
-                  {/* Icône & Titre */}
+                  {/* Icône */}
                   <div className="bg-zinc-900 border border-zinc-800 p-5 rounded-2xl text-cyan-400 shadow-xl group-hover:scale-110 transition-transform duration-500 shrink-0">
                     {project.icon}
                   </div>
@@ -79,9 +82,7 @@ export const Projects = () => {
                       <h4 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
                         {project.title}
                       </h4>
-                      <span className="text-[10px] font-bold text-zinc-500 bg-zinc-800/50 px-3 py-1 rounded-full uppercase tracking-widest border border-zinc-800">
-                        {project.context.includes("Stage") ? "PRO" : "PERSO"}
-                      </span>
+                      {/* Badge PRO/PERSO supprimé ici */}
                     </div>
                     
                     <p className="text-zinc-400 text-base leading-relaxed max-w-3xl">
@@ -90,9 +91,9 @@ export const Projects = () => {
 
                     {/* Contenu Déroulant */}
                     <div className={`overflow-hidden transition-all duration-700 ease-in-out ${isExpanded ? 'max-h-[1500px] opacity-100 mt-10' : 'max-h-0 opacity-0'}`}>
-                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 border-t border-zinc-800/50 pt-10">
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 border-t border-zinc-800/50 pt-10 text-left">
                         
-                        <div className="space-y-8 text-left">
+                        <div className="space-y-8">
                           <div>
                             <div className="flex items-center gap-2 text-cyan-400 mb-3">
                               <Info size={18} />
@@ -118,7 +119,7 @@ export const Projects = () => {
                           </div>
                         </div>
 
-                        <div className="space-y-8 text-left">
+                        <div className="space-y-8">
                           <div className="bg-zinc-900/50 border border-zinc-800 p-6 rounded-2xl">
                              <div className="flex items-center gap-2 text-cyan-400 mb-4">
                                <Award size={18} />
