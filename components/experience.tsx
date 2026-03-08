@@ -18,7 +18,8 @@ export function Experience() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
             <div>
               <h4 className="text-2xl font-bold text-foreground">Technicien Support Informatique</h4>
-              <p className="text-cyan-400 font-semibold mt-1">AMR Informatique · Stage (10 semaines)</p>
+              {/* MODIFICATION ICI : Texte mis à jour */}
+              <p className="text-cyan-400 font-semibold mt-1">AMR Informatique · Stage première et deuxième année</p>
             </div>
             <span className="text-xs font-bold text-muted-foreground bg-secondary px-4 py-2 rounded-full border border-border">
               SESSION 2024 - 2026
