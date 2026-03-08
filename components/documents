@@ -1,0 +1,83 @@
+"use client"
+
+import { FileText, Download, Eye, FileCheck } from "lucide-react"
+
+const docs = [
+  {
+    title: "CV Professionnel",
+    description: "Mon parcours, mes compétences techniques et mes expériences.",
+    format: "PDF",
+    fileUrl: "/docs/CV_Ozturk_Mikail.pdf", // Remplace par le bon chemin
+    icon: <FileText className="text-blue-400" size={24} />
+  },
+  {
+    title: "Attestation de Stage - 2ème Année",
+    description: "Validation du stage chez AMR Informatique (Session 2026).",
+    format: "PDF",
+    fileUrl: "/docs/attestation_stage_2.pdf", // Remplace par le bon chemin
+    icon: <FileCheck className="text-cyan-400" size={24} />
+  },
+  {
+    title: "Attestation de Stage - 1ère Année",
+    description: "En attente de document (Bientôt disponible).",
+    format: "PDF",
+    fileUrl: "#",
+    icon: <FileCheck className="text-zinc-500" size={24} />,
+    disabled: true
+  }
+]
+
+export function Documents() {
+  return (
+    <section id="documents" className="px-6 py-20 scroll-mt-24 max-w-6xl mx-auto">
+      <div className="mb-12">
+        <p className="mb-4 text-sm font-black uppercase tracking-[0.3em] text-cyan-400">
+          Ressources
+        </p>
+        <h2 className="text-3xl font-bold text-white tracking-tight">Documents Officiels</h2>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {docs.map((doc, index) => (
+          <div 
+            key={index}
+            className={`group relative rounded-3xl border border-zinc-800 bg-zinc-900/40 p-6 transition-all duration-300 ${doc.disabled ? 'opacity-50' : 'hover:border-cyan-400/40 hover:bg-zinc-900/60'}`}
+          >
+            <div className="flex items-start justify-between mb-4">
+              <div className="p-3 bg-zinc-800 rounded-2xl group-hover:scale-110 transition-transform">
+                {doc.icon}
+              </div>
+              <span className="text-[10px] font-bold text-zinc-500 border border-zinc-800 px-2 py-1 rounded">
+                {doc.format}
+              </span>
+            </div>
+
+            <h4 className="text-lg font-bold text-white mb-2">{doc.title}</h4>
+            <p className="text-sm text-zinc-400 mb-6 leading-relaxed">
+              {doc.description}
+            </p>
+
+            {!doc.disabled && (
+              <div className="flex gap-3">
+                <a 
+                  href={doc.fileUrl} 
+                  target="_blank"
+                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-bold py-3 rounded-xl transition-colors"
+                >
+                  <Eye size={14} /> Voir
+                </a>
+                <a 
+                  href={doc.fileUrl} 
+                  download
+                  className="flex items-center justify-center bg-cyan-400/10 hover:bg-cyan-400/20 text-cyan-400 p-3 rounded-xl transition-colors border border-cyan-400/20"
+                >
+                  <Download size={14} />
+                </a>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
