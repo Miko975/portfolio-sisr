@@ -6,9 +6,10 @@ const links = [
   { label: "Presentation", href: "#presentation" },
   { label: "Competences", href: "#competences" },
   { label: "Projets", href: "#projets" },
-  { label: "Expérience", href: "#experience" }, // <-- AJOUT DE L'ONGLET EXPÉRIENCE
+  { label: "Expérience", href: "#experience" },
   { label: "Veille", href: "#veille" },
   { label: "Parcours", href: "#parcours" },
+  { label: "Documents", href: "#documents" }, // <-- AJOUT ICI
   { label: "Contact", href: "#contact" },
 ]
 
