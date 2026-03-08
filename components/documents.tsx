@@ -41,40 +41,54 @@ export function Documents() {
         {docs.map((doc, index) => (
           <div 
             key={index}
-            className={`group relative rounded-3xl border border-zinc-800 bg-zinc-900/30 p-6 transition-all duration-500 ${doc.disabled ? 'opacity-60' : 'hover:border-cyan-400/40 hover:bg-zinc-900/60 shadow-xl hover:shadow-cyan-400/5'}`}
+            className={`group relative rounded-3xl border border-zinc-800 bg-zinc-900/30 p-8 flex flex-col h-full transition-all duration-500 ${doc.disabled ? 'opacity-60' : 'hover:border-cyan-400/40 hover:bg-zinc-900/60 shadow-xl hover:shadow-cyan-400/5'}`}
           >
-            <div className="flex items-start justify-between mb-6">
-              <div className={`p-3 rounded-2xl bg-zinc-800/50 border border-zinc-700/50 ${!doc.disabled && 'group-hover:scale-110 group-hover:border-cyan-400/30'} transition-all`}>
+            {/* Header: Icône + Badge */}
+            <div className="flex items-start justify-between mb-8">
+              <div className={`p-4 rounded-2xl bg-zinc-800/50 border border-zinc-700/50 ${!doc.disabled && 'group-hover:scale-110 group-hover:border-cyan-400/30'} transition-all`}>
                 {doc.icon}
               </div>
-              <span className={`text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-md border ${doc.disabled ? 'border-zinc-800 text-zinc-500' : 'border-cyan-400/20 text-cyan-400 bg-cyan-400/5'}`}>
+              <span className={`text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-md border ${doc.disabled ? 'border-zinc-800 text-zinc-500 bg-zinc-800/20' : 'border-cyan-400/20 text-cyan-400 bg-cyan-400/5'}`}>
                 {doc.status}
               </span>
             </div>
 
-            <h4 className="text-lg font-bold text-white mb-2">{doc.title}</h4>
-            <p className="text-xs text-zinc-400 mb-8 leading-relaxed">
-              {doc.description}
-            </p>
+            {/* Corps : Titre et Description avec hauteurs fixes pour l'alignement */}
+            <div className="flex-grow">
+              <h4 className="text-xl font-bold text-white mb-3 min-h-[56px] flex items-center leading-tight">
+                {doc.title}
+              </h4>
+              <p className="text-sm text-zinc-400 mb-8 leading-relaxed min-h-[60px]">
+                {doc.description}
+              </p>
+            </div>
 
-            {!doc.disabled && (
-              <div className="flex gap-3">
-                <a 
-                  href={doc.fileUrl} 
-                  target="_blank"
-                  className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-[10px] font-bold uppercase tracking-wider py-3 rounded-xl transition-all"
-                >
-                  <Eye size={14} /> Voir
-                </a>
-                <a 
-                  href={doc.fileUrl} 
-                  download
-                  className="flex items-center justify-center bg-cyan-400/10 hover:bg-cyan-400/20 text-cyan-400 p-3 rounded-xl transition-all border border-cyan-400/20"
-                >
-                  <Download size={14} />
-                </a>
-              </div>
-            )}
+            {/* Actions : Toujours collées en bas grâce à mt-auto */}
+            <div className="mt-auto">
+              {!doc.disabled ? (
+                <div className="flex gap-3">
+                  <a 
+                    href={doc.fileUrl} 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-[11px] font-bold uppercase tracking-wider py-3.5 rounded-xl transition-all border border-zinc-700"
+                  >
+                    <Eye size={16} /> Voir
+                  </a>
+                  <a 
+                    href={doc.fileUrl} 
+                    download
+                    className="flex items-center justify-center bg-cyan-400/10 hover:bg-cyan-400/20 text-cyan-400 p-3.5 rounded-xl transition-all border border-cyan-400/20"
+                  >
+                    <Download size={18} />
+                  </a>
+                </div>
+              ) : (
+                <div className="py-3.5 text-center bg-zinc-800/30 rounded-xl border border-zinc-800/50 text-zinc-600 text-[10px] font-bold uppercase tracking-widest">
+                  Indisponible
+                </div>
+              )}
+            </div>
           </div>
         ))}
       </div>
