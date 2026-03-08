@@ -6,7 +6,7 @@ const docs = [
   {
     title: "CV Professionnel",
     description: "Mon parcours complet, mes compétences techniques et mes certifications.",
-    fileUrl: "/docs/CV_Mikail_Ozturk.pdf",
+    fileUrl: "/docs/cv_mikail.pdf",
     icon: <FileText className="text-blue-400" size={24} />,
     status: "Disponible"
   },
