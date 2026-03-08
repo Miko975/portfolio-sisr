@@ -1,27 +1,30 @@
 "use client"
 
-import { FileText, Download, Eye, FileCheck, Clock } from "lucide-react"
+import { FileText, Download, Eye, Clock } from "lucide-react"
 
 const docs = [
   {
     title: "CV Professionnel",
     description: "Mon parcours complet, mes compétences techniques et mes certifications.",
     fileUrl: "/docs/cv_mikail.pdf",
-    icon: <FileText className="text-blue-400" size={24} />,
+    // Icône FileText en bleu
+    icon: <FileText className="text-blue-400" size={28} strokeWidth={2} />,
     status: "Disponible"
   },
   {
     title: "Attestation de Stage (2ème année)",
     description: "Validation du stage chez AMR Informatique (Janvier - Février 2026).",
     fileUrl: "/docs/attestation_stage_2.pdf",
-    icon: <FileCheck className="text-cyan-400" size={24} />,
+    // Exactement la même icône FileText, mais en cyan
+    icon: <FileText className="text-cyan-400" size={28} strokeWidth={2} />,
     status: "Disponible"
   },
   {
     title: "Attestation de Stage (1ère année)",
     description: "Document en cours de récupération auprès de l'établissement.",
     fileUrl: "#",
-    icon: <Clock className="text-zinc-500" size={24} />,
+    // Icône FileText en gris pour le hors-ligne
+    icon: <FileText className="text-zinc-500" size={28} strokeWidth={2} />,
     status: "Bientôt disponible",
     disabled: true
   }
@@ -43,17 +46,16 @@ export function Documents() {
             key={index}
             className={`group relative rounded-3xl border border-zinc-800 bg-zinc-900/30 p-8 flex flex-col h-full transition-all duration-500 ${doc.disabled ? 'opacity-60' : 'hover:border-cyan-400/40 hover:bg-zinc-900/60 shadow-xl hover:shadow-cyan-400/5'}`}
           >
-            {/* Header: Icône + Badge */}
             <div className="flex items-start justify-between mb-8">
-              <div className={`p-4 rounded-2xl bg-zinc-800/50 border border-zinc-700/50 ${!doc.disabled && 'group-hover:scale-110 group-hover:border-cyan-400/30'} transition-all`}>
+              {/* Carré de l'icône strictement identique */}
+              <div className={`w-14 h-14 flex items-center justify-center rounded-2xl bg-zinc-800/50 border border-zinc-700/50 ${!doc.disabled && 'group-hover:scale-110 group-hover:border-cyan-400/30'} transition-all`}>
                 {doc.icon}
               </div>
-              <span className={`text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-md border ${doc.disabled ? 'border-zinc-800 text-zinc-500 bg-zinc-800/20' : 'border-cyan-400/20 text-cyan-400 bg-cyan-400/5'}`}>
+              <span className={`text-[9px] font-black uppercase tracking-widest px-2 py-1 rounded-md border ${doc.disabled ? 'border-zinc-800 text-zinc-500' : 'border-cyan-400/20 text-cyan-400 bg-cyan-400/5'}`}>
                 {doc.status}
               </span>
             </div>
 
-            {/* Corps : Titre et Description avec hauteurs fixes pour l'alignement */}
             <div className="flex-grow">
               <h4 className="text-xl font-bold text-white mb-3 min-h-[56px] flex items-center leading-tight">
                 {doc.title}
@@ -63,7 +65,6 @@ export function Documents() {
               </p>
             </div>
 
-            {/* Actions : Toujours collées en bas grâce à mt-auto */}
             <div className="mt-auto">
               {!doc.disabled ? (
                 <div className="flex gap-3">
