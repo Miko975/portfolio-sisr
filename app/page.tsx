@@ -6,12 +6,12 @@ import { Projects } from "@/components/projects"
 import { Experience } from "@/components/experience"
 import { Veille } from "@/components/veille" 
 import { About } from "@/components/about"
-import { Documents } from "@/components/documents" // <-- NOUVEL IMPORT
+import { Documents } from "@/components/documents" // <-- IMPORT
 import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-background text-white">
+    <main className="relative min-h-screen bg-background">
       <Navbar />
       <Hero />
       
@@ -23,8 +23,8 @@ export default function Home() {
         <Veille />
         <About />
         
-        {/* On insère les Documents ici */}
-        <Documents />
+        {/* Section Documents placée ici */}
+        <Documents /> 
         
         <Footer />
       </div>
