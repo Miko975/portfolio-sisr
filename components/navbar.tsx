@@ -7,9 +7,9 @@ const links = [
   { label: "Competences", href: "#competences" },
   { label: "Projets", href: "#projets" },
   { label: "Expérience", href: "#experience" },
-  { label: "E5", href: "#e5" }, // <-- AJOUTÉ ICI ENTRE EXPÉRIENCE ET VEILLE
   { label: "Veille", href: "#veille" },
-  { label: "Parcours", href: "#parcours" },
+  { label: "Parcours", href: "#parcours" }, // C'est ton composant About
+  { label: "E5", href: "#e5" },             // E5 est maintenant APRES Parcours
   { label: "Documents", href: "#documents" },
   { label: "Contact", href: "#contact" },
 ]
