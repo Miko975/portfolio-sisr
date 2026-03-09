@@ -4,7 +4,7 @@ import { Presentation } from "@/components/presentation"
 import { BentoGrid } from "@/components/bento-grid"
 import { Projects } from "@/components/projects"
 import { Experience } from "@/components/experience"
-import { E5 } from "@/components/e5" // <-- NOUVEL IMPORT
+import { E5 } from "@/components/e5" 
 import { Veille } from "@/components/veille" 
 import { About } from "@/components/about"
 import { Documents } from "@/components/documents"
@@ -21,12 +21,13 @@ export default function Home() {
         <BentoGrid />
         <Projects />
         <Experience />
-        
-        {/* Section E5 insérée ici */}
-        <E5 /> 
-        
         <Veille />
-        <About />
+        
+        {/* Ton Parcours est ici */}
+        <About /> 
+        
+        {/* On place le E5 pile entre Parcours (About) et Documents */}
+        <E5 /> 
         
         <Documents /> 
         
