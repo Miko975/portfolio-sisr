@@ -13,7 +13,8 @@ const docs = [
   },
   {
     title: "Attestation de Stage (2ème année)",
-    description: "Validation du stage chez AMR Informatique (Janvier - Février 2026).",
+    // Mise à jour de la description demandée
+    description: "Validation du stage de 2ème année chez AMR Informatique.",
     fileUrl: "/docs/attestation_stage_2.pdf",
     icon: <FileText className="text-cyan-400" size={28} strokeWidth={2} />,
     status: "Disponible",
@@ -21,7 +22,8 @@ const docs = [
   },
   {
     title: "Attestation de Stage (1ère année)",
-    description: "Validation de mon premier stage en entreprise et des compétences acquises.",
+    // Mise à jour de la description demandée
+    description: "Validation du stage de 1ère année chez AMR Informatique.",
     fileUrl: "/docs/attestation_stage_1.pdf",
     icon: <FileText className="text-purple-400" size={28} strokeWidth={2} />,
     status: "Disponible",
