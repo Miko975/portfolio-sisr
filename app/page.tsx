@@ -4,9 +4,10 @@ import { Presentation } from "@/components/presentation"
 import { BentoGrid } from "@/components/bento-grid"
 import { Projects } from "@/components/projects"
 import { Experience } from "@/components/experience"
+import { E5 } from "@/components/e5" // <-- NOUVEL IMPORT
 import { Veille } from "@/components/veille" 
 import { About } from "@/components/about"
-import { Documents } from "@/components/documents" // <-- IMPORT
+import { Documents } from "@/components/documents"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -20,10 +21,13 @@ export default function Home() {
         <BentoGrid />
         <Projects />
         <Experience />
+        
+        {/* Section E5 insérée ici */}
+        <E5 /> 
+        
         <Veille />
         <About />
         
-        {/* Section Documents placée ici */}
         <Documents /> 
         
         <Footer />
