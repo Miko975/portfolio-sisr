@@ -7,9 +7,10 @@ const links = [
   { label: "Competences", href: "#competences" },
   { label: "Projets", href: "#projets" },
   { label: "Expérience", href: "#experience" },
+  { label: "E5", href: "#e5" }, // <-- AJOUTÉ ICI ENTRE EXPÉRIENCE ET VEILLE
   { label: "Veille", href: "#veille" },
   { label: "Parcours", href: "#parcours" },
-  { label: "Documents", href: "#documents" }, // <-- AJOUT ICI
+  { label: "Documents", href: "#documents" },
   { label: "Contact", href: "#contact" },
 ]
 
@@ -41,7 +42,7 @@ export function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="rounded-lg px-4 py-2 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+              className="rounded-lg px-3 py-2 text-[13px] text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
             >
               {link.label}
             </a>
